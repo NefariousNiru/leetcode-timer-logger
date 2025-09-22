@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "LeetCode Timer Logger",
   "version": "1.1",
-  "description": "Track time spent on LeetCode problems",
+  "description": "Track time spent on LeetCode problems with Analytics",
   "permissions": ["storage", "scripting", "activeTab"],
   "host_permissions": ["https://leetcode.com/*"],
   "background": {
