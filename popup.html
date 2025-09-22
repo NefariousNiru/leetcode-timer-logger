@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LeetCode Analytics</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f3f4f6;
+      color: #111827;
+      width: 380px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2563eb;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-bottom: 18px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    .stats-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .difficulty {
+      font-weight: 600;
+    }
+
+    .Easy { color: #16a34a; }
+    .Medium { color: #f59e0b; }
+    .Hard { color: #dc2626; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 8px 10px;
+      text-align: left;
+    }
+
+    th {
+      background: #f9fafb;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) {
+      background: #f9fafb;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+
+    .footer a {
+      color: #2563eb;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .scrollable {
+      max-height: 180px;
+      overflow-y: auto;
+      margin-top: 8px;
+    }
+
+    .live-timer {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #f59e0b;
+    }
+  </style>
+</head>
+<body>
+  <h2>LeetCode Analytics</h2>
+
+  <!-- Live timer -->
+  <div id="live-timer" class="live-timer">⏱ No active problem</div>
+
+  <!-- Averages & Min/Max -->
+  <div id="stats" class="card">Loading...</div>
+
+  <!-- Recent problems -->
+  <div class="card scrollable">
+    <h4>Recent Problems</h4>
+    <table id="recent-table">
+      <thead>
+        <tr>
+          <th>Problem</th>
+          <th>Difficulty</th>
+          <th>Time (min)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filled by popup.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div>Built for personal use</div>
+    <div>Built by <strong>Nirupom Bose Roy</strong></div>
+    <div>
+      <a href="https://www.linkedin.com/in/nbroy/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/NefariousNiru" target="_blank">GitHub</a>
+    </div>
+
+    <button id="delete-all-btn" style="
+        margin-top: 10px;
+        background: #dc2626;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 13px;
+        display: none; /* hidden by default */
+    ">Delete All</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
