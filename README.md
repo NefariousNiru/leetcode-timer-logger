@@ -101,7 +101,28 @@ leetcode-timer-logger/
 
 ---
 
+## Legal Disclaimer
+
+* This extension is **not affiliated with, endorsed by, or sponsored by LeetCode**.
+* All LeetCode content, logos, problem titles, and icons are **property of LeetCode**.
+* This project is intended for **personal use only**.
+* Do **not publish or distribute** this extension commercially without permission.
+
+---
+
+## Author & Links
+
+Built by **Nirupom Bose Roy**
+
+* [LinkedIn](https://www.linkedin.com/in/nbroy/)
+* [GitHub](https://github.com/NefariousNiru)
+
+---
+
 ## License
 
-This project is for **personal use only**. Do **not publish** without permission.
 © 2025 Nirupom Bose Roy
+
+Personal use only.
+
+
